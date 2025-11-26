@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Cha Chokro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <h1>Street Cha Chokro</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        
+<div class="concept concept-two">
+    <div class="hover"><h1>S</h1></div>
+    <div class="hover"><h1>T</h1></div>
+    <div class="hover"><h1>R</h1></div>
+    <div class="hover"><h1>E</h1></div>
+    <div class="hover"><h1>E</h1></div>
+    <div class="hover"><h1>T</h1></div>
+    <div class="hover"><h1> </h1></div>
+    <div class="hover"><h1>T</h1></div>
+    <div class="hover"><h1>E</h1></div>
+    <div class="hover"><h1>A</h1></div>
+    <div class="hover"><h1> </h1></div>
+    <div class="hover"><h1>C</h1></div>
+    <div class="hover"><h1>H</h1></div>
+    <div class="hover"><h1>O</h1></div>
+    <div class="hover"><h1>K</h1></div>
+    <div class="hover"><h1>R</h1></div>
+    <div class="hover"><h1>O</h1></div>
+</div>
+<div class="loop-wrapper">
+  <div class="mountain"></div>
+  <div class="hill"></div>
+  <div class="tree tree-1"></div>
+  <div class="tree tree-2"></div>
+  <div class="tree tree-3"></div>
+  <div class="rock"></div>
+  <div class="truck"></div>
+  <div class="wheels"></div>
+</div> 
+        <section class="hero">
+            <img src="banner.jpg" alt="A banner image of a tea stall">
+            <h2>The best tea in town.</h2>
+        </section>
+
+        <section id="menu" class="menu">
+            <h3>Our Menu</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <p><span class="item-name">Simple Lal cha</span> - <span class="item-price">5</span></p>
+                </div>
+                <div class="menu-item">
+                    <p><span class="item-name">Lemon tea</span> - <span class="item-price">5</span></p>
+                </div>
+                <div class="menu-item">
+                    <p><span class="item-name">Lal masala tea</span> - <span class="item-price">7</span></p>
+                </div>
+                <div class="menu-item">
+                    <p><span class="item-name">milk tea</span> - <span class="item-price">10 and 20</span></p>
+                </div>
+                <div class="menu-item">
+                    <p><span class="item-name">Simple coffee</span> - <span class="item-price">20</span></p>
+                </div>
+                <div class="menu-item">
+                    <p><span class="item-name">Special coffee</span> - <span class="item-price">30</span></p>
+                </div>
+            </div>
+        </section>
+
+  <div class="chest">
+  <div class="chest__panel chest__panel--back"></div>
+  <div class="chest__panel chest__panel--top"></div>
+  <div class="chest__panel chest__panel--bottom"></div>
+  <div class="chest__panel chest__panel--right"></div>
+  <div class="chest__panel chest__panel--front">
+    <div class="chest__panel chest__panel--front-frame"></div>
+  </div>
+  <div class="chest__panel chest__panel--left"></div>
+
+  <!-- Drawer 1 -->
+  <div class="chest__drawer drawer" data-position="1">
+    <details>
+      <summary></summary>
+    </details>
+    <div class="drawer__structure">
+      <div class="drawer__panel drawer__panel--back">
+        <span>Gold Flake</span>
+      </div>
+      <div class="drawer__panel drawer__panel--bottom"></div>
+      <div class="drawer__panel drawer__panel--right"></div>
+      <div class="drawer__panel drawer__panel--left"></div>
+      <div class="drawer__panel drawer__panel--front">7,10</div>
+    </div>
+  </div>
+
+  <!-- Drawer 2 -->
+  <div class="chest__drawer drawer" data-position="2">
+    <details>
+      <summary></summary>
+    </details>
+    <div class="drawer__structure">
+      <div class="drawer__panel drawer__panel--back">
+        <span>Flake</span>
+      </div>
+      <div class="drawer__panel drawer__panel--bottom"></div>
+      <div class="drawer__panel drawer__panel--right"></div>
+      <div class="drawer__panel drawer__panel--left"></div>
+      <div class="drawer__panel drawer__panel--front">7</div>
+    </div>
+  </div>
+
+  <!-- Drawer 3 -->
+  <div class="chest__drawer drawer" data-position="3">
+    <details>
+      <summary></summary>
+    </details>
+    <div class="drawer__structure">
+      <div class="drawer__panel drawer__panel--back">
+        <!-- Awesome letters -->
+        <span class="letter">M</span>
+        <span class="letter">I</span>
+        <span class="letter">N</span>
+        <span class="letter">T</span>
+       </div>
+      <div class="drawer__panel drawer__panel--bottom"></div>
+      <div class="drawer__panel drawer__panel--right"></div>
+      <div class="drawer__panel drawer__panel--left"></div>
+      <div class="drawer__panel drawer__panel--front">10</div>
+    </div>
+  </div>
+</div>
+        <section id="contact" class="contact">
+            <h3>Contact Us</h3>
+            <p>Phone: 7908882549</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Street Tea Chokro</p>
+    </footer>
+
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+        const menu = document.querySelector('.menu');
+
+        function animateMenuItems() {
+            const menuTop = menu.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Start animation when the menu section is a bit above the bottom of the viewport
+            const startAnimationPosition = windowHeight * 0.8;
+
+            // Calculate the scroll progress within the menu section
+            let scrollProgress = (startAnimationPosition - menuTop) / (windowHeight * 0.5);
+            scrollProgress = Math.max(0, Math.min(1, scrollProgress)); // Clamp between 0 and 1
+
+            menuItems.forEach((item, index) => {
+                const isOdd = (index + 1) % 2 !== 0;
+                const startX = isOdd ? -100 : 100;
+                
+                // Animate transform and opacity based on scroll progress
+                const translateX = startX * (1 - scrollProgress);
+                item.style.transform = `translateX(${translateX}px)`;
+                item.style.opacity = scrollProgress;
+            });
+        }
+
+        // Run the animation function on page load and on scroll
+        document.addEventListener('scroll', animateMenuItems);
+        animateMenuItems(); // Initial check
+    </script>
+</body>
+</html>
